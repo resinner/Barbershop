@@ -6,39 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
 
-    <header>
-        <a href="">
+    <header class="header">
+        <a class="header-logo" href="">
             <img src="./images/header/logo.svg" alt="Логотип Barbershop" width="68" height="56" />
         </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Про нас</a>
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li class="header-list-item">
+                    <a class="header-link" href="">Про нас</a>
                 </li>
-                <li>
-                    <a href="">Послуги та ціни</a>
+                <li class="header-list-item">
+                    <a class="header-link" href="">Послуги та ціни</a>
                 </li>
-                <li>
-                    <a href="">Майстри</a>
+                <li class="header-list-item">
+                    <a class="header-link" href="">Майстри</a>
                 </li>
-                <li>
-                    <a href="">Контакти</a>
+                <li class="header-list-item">
+                    <a class="header-link" href="">Контакти</a>
                 </li>
             </ul>
-            <div>
-                <a href="tel:+380441111111">+38 044 111 11 11</a>
-                <button type="button">ОНЛАЙН-ЗАПИС</button>
+            <div class="header-group">
+                <a class="header-contact" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button class="header-btn" type="button">ОНЛАЙН-ЗАПИС</button>
             </div>
         </nav>
     </header>
     <!-- Унікальний контент -->
     <main>
         <!-- Секція Герой -->
-        <section>
+        <section class="hero">
             <ul>
                 <li>
                     <a href="">Instagram</a>
@@ -69,7 +74,7 @@
             </ul>
         </section>
         <!-- Секція про нас -->
-        <section>
+        <section class="about">
             <ul>
                 <li>
                     <img src="./images/about/img-1.jpg" alt="Бриття бороди" width="270" height="445" />
@@ -93,7 +98,7 @@
 
         </section>
         <!-- Секція Послуги та ціни -->
-        <section>
+        <section class="price">
             <p>Проведи час у компанії кращих майстрів</p>
             <h2>Послуги та ціни</h2>
             <ul>
@@ -117,7 +122,7 @@
             <button type="button">онлайн-запис</button>
         </section>
         <!-- Секція Переваги -->
-        <section>
+        <section class="benefits">
             <ul>
                 <li>
                     <p>600</p>
@@ -147,7 +152,7 @@
             </div>
         </section>
         <!-- Майстри -->
-        <section>
+        <section class="team">
             <p>для справжніх поціновувачів атмосфери</p>
             <h2>Наші майстри</h2>
             <ul>
@@ -211,7 +216,7 @@
             </ul>
         </section>
         <!--Секція Портфоліо -->
-        <section>
+        <section class="portfolio">
             <p>Латинською мовою "барба" означає "борода"</p>
             <h2 hidden>Приклади робіт</h2>
             <ul>
@@ -230,7 +235,7 @@
             </ul>
         </section>
         <!-- Секція Контакти -->
-        <section>
+        <section class="contacts">
             <div>
                 <h2>онлайн-запис</h2>
                 <form action=""></form>
@@ -260,7 +265,7 @@
     </main>
 
     <!-- Секція футер -->
-    <footer>
+    <footer class="footer">
 <p>&#169; Copyright 2020</p>
 <ul>
     <li>
