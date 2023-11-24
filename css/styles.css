@@ -19,12 +19,37 @@ body {
   line-height: 1.67;
 }
 
+h1, h2, h3, h4, p {
+margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* common styles end */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid red;
+}
+
 .link {
   text-decoration: none;
+  /* color: currentColor; */
 }
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
@@ -35,7 +60,7 @@ body {
   letter-spacing: 0.09em;
 
   background-color: transparent;
-
+  border: 1px solid var(--accent-color);
   cursor: pointer;
 }
 
@@ -87,7 +112,7 @@ body {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 72px;
-  line-height: 85px;
+  line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-dark-theme);
 }
@@ -96,7 +121,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
-  line-height: 49px;
+  line-height: 1.16;
   letter-spacing: 0.05em;
 }
 
@@ -108,10 +133,66 @@ body {
   color: var(--main-dark-theme);
 }
 
-/*  */
+.section-subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.section-subtitle-mode-light {
+  color: #555555;
+}
+
+.section-subtitle-mode-light {
+  color: #ffffff;
+}
+
+/* common styles end */
+
+/* slider start */
+
+.slider {
+  color: #fff;
+}
+
+.slider-btn {
+  padding: 8px 0;
+  min-width: 60px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: #fff;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.slider-btn-prev {
+  text-align: left;
+  opacity: 0.6;
+}
+
+.slider-btn-next {
+  text-align: right;
+}
+
+/* slider end */
 
 .header {
   background-color: #191c26;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+  display: flex;
 }
 
 .header-link {
@@ -124,7 +205,7 @@ body {
 }
 
 .curent-link {
-   color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .header-link:hover,
