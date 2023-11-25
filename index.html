@@ -44,11 +44,11 @@
                         <a class="header-link link" href="#contacts">Контакти</a>
                     </li>
                 </ul>
-                <div class="header-group">
-                    <a class="header-contact link" href="tel:+380441111111">+38 044 111 11 11</a>
-                    <button class="header-btn btn btn-mode-dark" type="button">ОНЛАЙН-ЗАПИС</button>
-                </div>
             </nav>
+            <div class="header-group">
+                <a class="header-contact link" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button class="header-btn btn btn-mode-dark" type="button">ОНЛАЙН-ЗАПИС</button>
+            </div>
         </div>
     </header>
     <!-- Унікальний контент -->
@@ -87,59 +87,69 @@
             </div>
         </section>
         <!-- Секція про нас -->
-        <section class="about" id="about">
-            <div class="container">
-                <ul class="list">
-                    <li>
-                        <img src="./images/about/img-1.jpg" alt="Бриття бороди" width="270" height="445" />
+        <section class="about section" id="about">
+            <div class="container about-container">
+                <ul class="list about-list">
+                    <li class="about-item">
+                        <img class="about-pic" src="./images/about/img-1.jpg" alt="Бриття бороди" width="270"
+                            height="445" />
                     </li>
-                    <li>
-                        <img src="./images/about/img-2.jpg" alt="Бриття небезпечною бритвою" width="270" height="445" />
+                    <li class="about-item">
+                        <img class="about-pic" src="./images/about/img-2.jpg" alt="Бриття небезпечною бритвою"
+                            width="270" height="445" />
                     </li>
                 </ul>
 
-                <div>
+                <div class="about-group">
                     <p class="uppertitle uppertitle-mode-light">ПРО НАС</p>
                     <h2 class="section-title section-title-mode-light">Кращий Барбершоп твого міста</h2>
-                    <p>Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до нас.</p>
-                    <p>Ми команда, яка ніколи не зупиняється на досягнутому
+                    <p class="section-subtitle section-subtitle-mode-light">
+                        Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до нас.
+                    </p>
+                    <p class="about-descr">
+                        Ми команда, яка ніколи не зупиняється на досягнутому
                         і прагне змін. І коли ти потрапиш до рук нашого майстра,
                         то вже ніколи не зможеш бути тим самим. Ми команда, яка завжди з клієнтами "на одній хвилі".
                         Тому ми
                         завжди готові
-                        вдосконалити кожного, хто до нас приходить!</p>
-                    <button type="button">онлайн-запис</button>
+                        вдосконалити кожного, хто до нас приходить!
+                    </p>
+                    <button class="btn btn-mode-light" type="button">онлайн-запис</button>
                 </div>
             </div>
         </section>
         <!-- Секція Послуги та ціни -->
-        <section class="price" id="price">
+        <section class="price section" id="price">
             <div class="container">
-                <p class="uppertitle uppertitle-mode-dark">Проведи час у компанії кращих майстрів</p>
-                <h2 class="section-title section-title-mode-dark">Послуги та ціни</h2>
-                <ul class="list">
-                    <li>
-                        <ul class="list">
-                            <li>Чоловіча стрижка від 300грн.</li>
-                            <li>Стрижка бороди від 200грн.</li>
-                            <li>Стрижка вусів від 200грн.</li>
-                            <li>Бриття небезпечною бритвою від 200грн.</li>
+                <p class="uppertitle uppertitle-mode-dark ">
+                    Проведи час у компанії кращих майстрів
+                </p>
+                <h2 class="section-title section-title-mode-dark price-title">Послуги та ціни</h2>
+                <ul class="price-list list">
+                    <li class="price-list-item">
+                        <ul class="price-inner-list list">
+                            <li class="price-inner-item"><span>Чоловіча стрижка</span><span>від 300грн.</span></li>
+                            <li class="price-inner-item"><span>Стрижка бороди</span><span>від 200грн.</span></li>
+                            <li class="price-inner-item"><span>Стрижка вусів</span><span>від 200грн.</span></li>
+                            <li class="price-inner-item"><span>Бриття небезпечною бритвою</span><span>від 200грн.</span>
+                            </li>
                         </ul>
                     </li>
-                    <li>
-                        <ul class="list">
-                            <li>Стрижка у стажера від 50грн.</li>
-                            <li>Стрижка під насадку від 200грн.</li>
-                            <li>Дитяча стрижка (до 12 років) від 300грн.</li>
-                            <li>Камуфлювання сивини выд 200грн.</li>
+                    <li class="price-list-item">
+                        <ul class="price-inner-list list">
+                            <li class="price-inner-item"><span>Стрижка у стажера</span><span>від 50грн.</span></li>
+                            <li class="price-inner-item"><span>Стрижка під насадку</span><span>від 200грн.</span></li>
+                            <li class="price-inner-item"><span>Дитяча стрижка (до 12 років)</span><span>від
+                                    300грн.</span></li>
+                            <li class="price-inner-item"><span>Камуфлювання сивини</span><span>від 200грн.</span></li>
                         </ul>
                     </li>
                 </ul>
-                <button type="button">онлайн-запис</button>
+                <button class="btn btn-mode-dark price-btn" type="button">онлайн-запис</button>
             </div>
         </section>
         <!-- Секція Переваги -->
-        <section class="benefits">
+        <section class="benefits section">
             <div class="container">
                 <ul class="list">
                     <li>
@@ -171,77 +181,97 @@
             </div>
         </section>
         <!-- Майстри -->
-        <section class="team" id="team">
+        <section class="team section" id="team">
             <div class="container">
-                <p class="uppertitle uppertitle-mode-light">для справжніх поціновувачів атмосфери</p>
-                <h2 class="section-title section-title-mode-light">Наші майстри</h2>
-                <ul class="list">
-                    <li>
-                        <img src="./images/team/img-1.jpg" alt="John Smith" width="370" height="346">
-                        <h3 lang="en">John Smith</h3>
-                        <p lang="en">Extreme Barber</p>
-                        <ul class="list">
-                            <li>
-                                <a class="link" target="_blank" rel="noopener noreferrer"
-                                    aria-label="instagram">instagram</a>
+                <p class="uppertitle uppertitle-mode-light team-uppertitle">для справжніх поціновувачів атмосфери</p>
+                <h2 class="section-title section-title-mode-light team-title">Наші майстри</h2>
+
+                <ul class="team-list card-set list">
+                    <li class="team-item card-set-item">
+                        <img class="team-avatar" src="./images/team/img-1.jpg" alt="John Smith" width="370"
+                            height="346">
+                        <h3 class="team-subtitle" lang="en">John Smith</h3>
+                        <p class="team-position" lang="en">Extreme Barber</p>
+                        <ul class="social-media list">
+                            <li class="social-media-item">
+                                <a class="social-media-link link" target="_blank" rel="noopener noreferrer"
+                                    aria-label="instagram">
+                                    instagram
+                                </a>
                             </li>
-                            <li>
-                                <a class="link" target="_blank" rel="noopener noreferrer"
-                                    aria-label="twitter">twitter</a>
+                            <li class="social-media-item">
+                                <a class="social-media-link link" target="_blank" rel="noopener noreferrer"
+                                    aria-label="twitter">
+                                    twitter
+                                </a>
                             </li>
-                            <li>
-                                <a class="link" target="_blank" rel="noopener noreferrer"
-                                    aria-label="facebook">facebook</a>
+                            <li class="social-media-item">
+                                <a class="social-media-link link" target="_blank" rel="noopener noreferrer"
+                                    aria-label="facebook">
+                                    facebook
+                                </a>
                             </li>
-                            <li>
-                                <a class="link" target="_blank" rel="noopener noreferrer"
-                                    aria-label="linkedin">linkedin</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <img src="./images/team/img-2.jpg" alt="Michele Doe" width="370" height="346">
-                        <h3 lang="en">Michele Doe</h3>
-                        <p lang="en">Extreme Barber</p>
-                        <ul class="list">
-                            <li>
-                                <a class="link" href="" target="_blank" rel="noopener noreferrer"
-                                    aria-label="instagram">instagram</a>
-                            </li>
-                            <li>
-                                <a class="link" href="" target="_blank" rel="noopener noreferrer"
-                                    aria-label="twitter">twitter</a>
-                            </li>
-                            <li>
-                                <a class="link" href="" target="_blank" rel="noopener noreferrer"
-                                    aria-label="facebook">facebook</a>
-                            </li>
-                            <li>
-                                <a class="link" href="" target="_blank" rel="noopener noreferrer"
-                                    aria-label="linkedin">linkedin</a>
+                            <li class="social-media-item">
+                                <a class="social-media-link link" target="_blank" rel="noopener noreferrer"
+                                    aria-label="linkedin">
+                                    linkedin
+                                </a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <img src="./images/team/img-3.jpg" alt="Alan Black" width="370" height="346">
-                        <h3 lang="en">Alan Black</h3>
-                        <p lang="en">Extreme Barber</p>
-                        <ul class="list">
-                            <li>
-                                <a class="link" href="" target="_blank" rel="noopener noreferrer"
-                                    aria-label="instagram">instagram</a>
+                    <li class="team-item card-set-item">
+                        <img class="team-avatar" src="./images/team/img-2.jpg" alt="Michele Doe" width="370"
+                            height="346">
+                        <h3 class="team-subtitle" lang="en">Michele Doe</h3>
+                        <p class="team-position" lang="en">Extreme Barber</p>
+                        <ul class="social-media list">
+                            <li class="social-media-item">
+                                <a class="social-media-link link" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                                    instagram
+                                </a>
                             </li>
-                            <li>
-                                <a class="link" href="" target="_blank" rel="noopener noreferrer"
-                                    aria-label="twitter">twitter</a>
+                            <li class="social-media-item">
+                                <a class="social-media-link link" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                                    twitter
+                                </a>
                             </li>
-                            <li>
-                                <a class="link" href="" target="_blank" rel="noopener noreferrer"
-                                    aria-label="facebook">facebook</a>
+                            <li class="social-media-item">
+                                <a class="social-media-link link" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                                    facebook
+                                </a>
                             </li>
-                            <li>
-                                <a class="link" href="" target="_blank" rel="noopener noreferrer"
-                                    aria-label="linkedin">linkedin</a>
+                            <li class="social-media-item">
+                                <a class="social-media-link link" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                                    linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="team-item card-set-item">
+                        <img class="team-avatar" src="./images/team/img-3.jpg" alt="Alan Black" width="370"
+                            height="346">
+                        <h3 class="team-subtitle" lang="en">Alan Black</h3>
+                        <p class="team-position" lang="en">Extreme Barber</p>
+                        <ul class="social-media list">
+                            <li class="social-media-item">
+                                <a class="social-media-link link" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                                    instagram
+                                </a>
+                            </li>
+                            <li class="social-media-item">
+                                <a class="social-media-link link" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                                    twitter
+                                </a>
+                            </li>
+                            <li class="social-media-item">
+                                <a class="social-media-link link" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                                    facebook
+                                </a>
+                            </li>
+                            <li class="social-media-item">
+                                <a class="social-media-link link" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                                    linkedin
+                                </a>
                             </li>
                         </ul>
                     </li>
@@ -249,28 +279,28 @@
             </div>
         </section>
         <!--Секція Портфоліо -->
-        <section class="portfolio">
+        <section class="portfolio section">
             <div class="container">
-                <p class="uppertitle uppertitle-mode-light">Латинською мовою "барба" означає "борода"</p>
+                <p class="portfolio-uppertitle uppertitle uppertitle-mode-light">Латинською мовою "барба" означає "борода"</p>
                 <h2 hidden>Приклади робіт</h2>
-                <ul class="list">
-                    <li>
+                <ul class="portfolio-list list card-set">
+                    <li class="portfolio-item card-set-item">
                         <img src="./images/portfolio/portfolio-1.jpg" alt="Приклад робіт 1" width="270" height="360">
                     </li>
-                    <li>
+                    <li class="portfolio-item card-set-item">
                         <img src="./images/portfolio/portfolio-2.jpg" alt="Приклад робіт 2" width="270" height="360">
                     </li>
-                    <li>
+                    <li class="portfolio-item card-set-item">
                         <img src="./images/portfolio/portfolio-3.jpg" alt="Приклад робіт 3" width="270" height="360">
                     </li>
-                    <li>
+                    <li class="portfolio-item card-set-item">
                         <img src="./images/portfolio/portfolio-4.jpg" alt="Приклад робіт 4" width="270" height="360">
                     </li>
                 </ul>
             </div>
         </section>
         <!-- Секція Контакти -->
-        <section class="contacts" id="contacts">
+        <section class="contacts section" id="contacts">
             <div class="container">
                 <div>
                     <h2 class="section-title">онлайн-запис</h2>
