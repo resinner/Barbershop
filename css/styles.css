@@ -805,27 +805,171 @@ img {
   display: flex;
 }
 
-.contacts-supcontainer {
+.contacts-subcontainer {
   width: 50%;
-  /* padding-left: 43px; */
-  /* padding-right: 58px; */
+  padding-right: 40px;
 }
 
 .contacts-subcontainer:last-child {
   padding-left: 100px;
 }
 
-.contacts-uppertitle {
-  color: #ffffff;
+.contact-section-title {
+  display: inline-block;
+
 }
 
-.contact-form {
+/* .contact-form {
   display: flex;
   flex-wrap: wrap;
   width: 570px;
+} */
+
+.contact-form-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  margin-bottom: 44px;
 }
 
-.contact-form-input {
+.contact-form-group {
+  position: relative;
+  flex-basis: 270px;
+}
+
+.contact-form-group:last-child {
+  flex-basis: 260px;
+}
+
+.contact-form-label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 11);
+
+  letter-spacing: 0.1em;
+
+  color: rgba(157, 164, 189, 0.4);
+
+  transition: transform 200ms;
+}
+
+.contact-form-field {
+  width: 100%;
+  height: 26px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: transparent;
+
+  transition: border-color var(--anim-fast);
+}
+
+.contact-form-field:focus,
+.contact-form-field:not(:placeholder-shown) {
+  border-color: #fff;
+}
+
+.contact-form-field:focus + .contact-form-label,
+.contact-form-field:not(:placeholder-shown) + .contact-form-label {
+  transform: translateY(-30px) scale(0.8);
+  transform-origin: top left;
+  color: #fff;
+}
+
+.contact-form-field::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+
+  letter-spacing: 0.1em;
+
+  color: rgba(157, 164, 189, 0.4);
+  opacity: 0;
+
+  transition: opacity 250ms ease-in-out 50ms;
+}
+
+.contact-form-field:focus::placeholder {
+  opacity: 1;
+}
+
+.contact-form-textarea {
+    width: 100%;
+  height: 76px;
+  resize: none;
+    padding-left: 5px;
+  padding-right: 5px;
+
+    color: #fff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: transparent;
+
+  transition: border-color var(--anim-fast);
+
+  margin-bottom: 44px;
+}
+
+.contact-form-textarea:focus,
+.contact-form-textarea:not(:placeholder-shown) {
+  border-color: #fff;
+}
+
+.contact-form-textarea:focus + .contact-form-textarea-label,
+.contact-form-textarea:not(:placeholder-shown) + .contact-form-textarea-label {
+  transform: translateY(-130px) scale(0.8);
+  transform-origin: top left;
+  color: #fff;
+}
+
+.contact-form-textarea::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+
+  letter-spacing: 0.1em;
+
+  color: rgba(157, 164, 189, 0.4);
+  opacity: 0;
+
+  transition: opacity 250ms ease-in-out 50ms;
+}
+
+.contact-form-textarea:focus::placeholder {
+  opacity: 1;
+}
+
+.contact-form-textarea-label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  transform: translateY(-700%);
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 11);
+
+  letter-spacing: 0.1em;
+
+  color: rgba(157, 164, 189, 0.4);
+
+  transition: transform 200ms;
+}
+
+/* .contact-form-input {
   width: 260px;
   height: 24px;
 
@@ -833,23 +977,23 @@ img {
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   /* color: rgba(157, 164, 189, 0.4); */
-}
+/* }  */
 
-.contact-form-input {
+/* .contact-form-input {
   margin-bottom: 44px;
 }
 
 .contact-form-input1 {
   margin-right: 30px;
-}
+} */
 
-.contact-form-textarea {
+/* .contact-form-textarea {
   width: 560px;
   height: 76px;
   resize: none;
-  display: block;
+  /* display: block; */
 
-  background-color: transparent;
+/* background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   color: rgba(157, 164, 189, 0.4);
@@ -857,17 +1001,12 @@ img {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
-  margin-bottom: 44px;
+  margin-bottom: 44px; */
+/* }  */
 
-  &::placeholder {
-    color: red;
-  }
-
-  &::-ms-input-placeholder {
-    /* Edge 12 -18 */
-    color: red;
-  }
-}
+/* label {
+  color: #fff;
+} */
 
 .contacts-address {
   font-family: var(--main-fonts);
@@ -912,6 +1051,7 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  color: #ffffff;
 
   &::before {
     content: '';
@@ -1010,7 +1150,7 @@ img {
 .backdrop {
   position: fixed;
   top: 0;
-  left: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
 

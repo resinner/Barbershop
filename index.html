@@ -63,11 +63,11 @@
                     <ul class="hero-list list">
                         <li class="hero-item">
                             <a class="hero-link socials-link link" href="https://www.instagram.com/" target="_blank"
-                        rel="noopener noreferrer">Instagram</a>
+                                rel="noopener noreferrer">Instagram</a>
                         </li>
                         <li class="hero-item">
                             <a class="hero-link socials-link link" href="https://www.youtube.com/" target="_blank"
-                        rel="noopener noreferrer">Youtube</a>
+                                rel="noopener noreferrer">Youtube</a>
                         </li>
 
                     </ul>
@@ -393,14 +393,24 @@
         <section class="contacts-section section" id="contacts">
             <div class="container contacts-container">
                 <div class="contacts-subcontainer">
-                    <h2 class="section-title section-title-mode-dark">Онлайн-запис</h2>
-                    <form class="contact-form" action="">
-                        <input class="contact-form-input contact-form-input1" id="contact-form-name"
-                            name="contact-form-name" autocomplete="name" placeholder="Ім'я*" required />
-                        <input class="contact-form-input" id="contact-form-phone" name="contact-form-phone"
-                            autocomplete="phone" placeholder="Телефон*" required />
-                        <textarea class="contact-form-textarea" id="contact-form-textarea" placeholder="Повідомлення">
-                        </textarea>
+                    <strong class="section-title section-title-mode-dark contact-section-title">Онлайн-запис</strong>
+                    <form name="contact-form" autocomplete="on">
+                        <div class="contact-form-wrapper">
+                            <label class="contact-form-group">
+                                <input class="contact-form-field" name="user-name" autocomplete="name"
+                                    placeholder="John Wick*" required />
+                                <span class="contact-form-label">Ім'я*</span>
+                            </label>
+                            <label class="contact-form-group">
+                                <input class="contact-form-field" name="user-phone" autocomplete="phone"
+                                    placeholder="+38 (099) 123 45 67*" required id="user-phone" />
+                                <span class="contact-form-label">Телефон*</span>
+                            </label>
+                        </div>
+                        <label class="contact-form-group">
+                            <textarea class="contact-form-textarea" placeholder="Потрібно..." name="user-massage"></textarea>
+                            <span class="contact-form-textarea-label">Повідомлення</span>
+                        </label>
                     </form>
                     <button class="btn btn-mode-dark" type="submit">відправити</button>
                 </div>
@@ -435,8 +445,8 @@
                     </address>
 
                     <h3 class="contacts-uppertitle">ЧАСИ РОБОТИ</h3>
-                    <p class="contacts-address-time">Щоденно з <time class="time" datetime="9:00"> 9:00 </time> до <time class="time"
-                            datetime="22:00">22:00</time></p>
+                    <p class="contacts-address-time">Щоденно з <time class="time" datetime="9:00"> 9:00 </time> до <time
+                            class="time" datetime="22:00">22:00</time></p>
                 </div>
             </div>
         </section>
@@ -459,63 +469,74 @@
         </div>
     </footer>
 
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-        <button class="modal-close-btn" type="button" data-modal-close>
-            <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-        </button>
-        <strong class="modal__title">Залиште свої данні, ми вам зателефонуємо</strong>
-        <form class="singup-form" name="singup-form" autocomplete="on">
-            <div class="form-field-container">
-                <span class="form-field-label">Им'я</span>
-                <label class="form-field">
-                    <input class="modal-input" type="text" name="user-name" placeholder=" " autofocus minlength="2" required>
-                    <svg class="modal-field-icon" width="32px" height="32px">
-                        <use href="./images/icons.svg#icon-name"></use>
-                    </svg>
-                </label>
-            </div>
-            <div class="form-field-container">
-                <span class="form-field-label">Телефон</span>
-                <label class="form-field">
-                    <input type="tel" name="user-phone" placeholder=" " minlength="10" pattern="[0-9]{10}" required>
-                    <svg class="modal-field-icon" width="26px" height="26px">
-                        <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
-                </label>
-            </div>
-            <div class="form-field-container">
-                <span class="form-field-label">Коментар</span>
-                <label class="form-field-area">
-                    <textarea name="user-massage" id="" cols="30" rows="10" placeholder="Введите текст" minlength="10"
-                        required></textarea>
-                </label>
-            </div>
-            <div class="form-field-container">
-                <label class="form-checkbox">
-                    <input type="checkbox" name="user-agreement" required>
-                    <span class="form-custom-checkbox">
-                        <svg class="" width="15px" height="12px">
-                            <use href="./images/icons.svg#icon-choose"></use>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" type="button" data-modal-close>
+                <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <strong class="modal__title">Залиште свої данні, ми вам зателефонуємо</strong>
+            <form class="singup-form" name="singup-form" autocomplete="on">
+                <div class="form-field-container">
+                    <span class="form-field-label">Им'я</span>
+                    <label class="form-field">
+                        <input class="modal-input" type="text" name="user-name" placeholder=" " autofocus minlength="2"
+                            required>
+                        <svg class="modal-field-icon" width="32px" height="32px">
+                            <use href="./images/icons.svg#icon-name"></use>
                         </svg>
+                    </label>
+                </div>
+                <div class="form-field-container">
+                    <span class="form-field-label">Телефон</span>
+                    <label class="form-field">
+                        <input type="tel" name="user-phone" placeholder=" " minlength="10" pattern="[0-9]{10}" required>
+                        <svg class="modal-field-icon" width="26px" height="26px">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="form-field-container">
+                    <span class="form-field-label">Коментар</span>
+                    <label class="form-field-area">
+                        <textarea name="user-massage" id="" cols="30" rows="10" placeholder="Залиште коментар"
+                            minlength="10" required></textarea>
+                    </label>
+                </div>
+                <div class="form-field-container">
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="user-agreement" required>
+                        <span class="form-custom-checkbox">
+                            <svg class="" width="15px" height="12px">
+                                <use href="./images/icons.svg#icon-choose"></use>
+                            </svg>
+                        </span>
+                    </label>
+
+                    <span class="form-checkbox-lable">Погоджуюсь з разсиланням та приймаю
+                        <a class="submit-check-agree"
+                            href="https://www.google.com/search?q=%D1%8F%D0%BA+%D1%81%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B8+%D1%83%D0%BC%D0%BE%D0%B2%D0%B8+%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%83&oq=%D1%8F%D0%BA+%D1%81%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B8+%D1%83%D0%BC%D0%BE%D0%B2%D0%B8+%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%83&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigAdIBCDYzODdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+                            target="_blank" rel="noopener no-referrer">
+                            Умови договору
+                        </a>
                     </span>
-                </label>
-        
-                <span class="form-checkbox-lable">Погоджуюсь з разсиланням та приймаю
-                    <a class="submit-check-agree" href="https://www.google.com/search?q=%D1%8F%D0%BA+%D1%81%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B8+%D1%83%D0%BC%D0%BE%D0%B2%D0%B8+%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%83&oq=%D1%8F%D0%BA+%D1%81%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B8+%D1%83%D0%BC%D0%BE%D0%B2%D0%B8+%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%83&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigAdIBCDYzODdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener no-referrer">
-                        Умови договору
-                    </a>
-                </span>
-            </div>
-            <button class="submit-button-modal btn" type="submit">Відправить</button>
-        </form>
+                </div>
+                <button class="submit-button-modal btn" type="submit">Відправить</button>
+            </form>
+        </div>
     </div>
-</div>
 
     <script src="./js/modal.js"></script>
     <script src=""></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/inputmask/inputmask.min.js"
+        integrity="sha512-DVfS/GbZzLMmxBL/CW92N84eHP2Fq9d+r9RKbvctcvzISVfu+WvD+MCvbK9j8I6nVLrntGo3UUVrNFUDX0ukBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/input-mask.js"></script>
+
 </body>
 
 </html>
