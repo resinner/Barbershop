@@ -349,6 +349,12 @@ img {
   text-transform: uppercase;
 
   color: var(--main-dark-theme);
+  transition: color var(--anim-fast);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--accent-color);
 }
 
 .header-btn {
@@ -582,6 +588,14 @@ img {
   margin-bottom: 30px;
 }
 
+.benefits-item:nth-child(2) {
+  margin-top: 30px;
+}
+
+.benefits-item:nth-child(4) {
+  margin-top: 30px;
+}
+
 .benefits-amount {
   font-weight: 700;
   font-size: 42px;
@@ -596,6 +610,8 @@ img {
   font-size: 16px;
   line-height: 1.38;
   color: #ff6c00;
+
+  vertical-align: super;
 }
 
 .benefits-descr {
@@ -663,10 +679,6 @@ img {
 .team-list {
   --items: 3;
 }
-
-/* .team-item {
-  outline: 1px solid red;
-} */
 
 .team-avatar {
   margin-bottom: 30px;
@@ -819,12 +831,6 @@ img {
 
 }
 
-/* .contact-form {
-  display: flex;
-  flex-wrap: wrap;
-  width: 570px;
-} */
-
 .contact-form-wrapper {
   display: flex;
   align-items: center;
@@ -929,7 +935,7 @@ img {
 
 .contact-form-textarea:focus + .contact-form-textarea-label,
 .contact-form-textarea:not(:placeholder-shown) + .contact-form-textarea-label {
-  transform: translateY(-130px) scale(0.8);
+  transform: translateY(-150px) scale(0.8);
   transform-origin: top left;
   color: #fff;
 }
