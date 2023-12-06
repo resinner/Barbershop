@@ -28,9 +28,16 @@
 
     <header class="header">
         <div class="container header-container">
-            <a class="header-logo link" href="./index.html">
-                <img src="./images/header/logo.svg" alt="Логотип Barbershop" width="68" height="56" />
+            <!-- <a class="header-logo link" href="./index.html">
+                <img class="header-logo-svg" src="./images/header/logo.svg" alt="Логотип Barbershop" width="68"
+                    height="56" />
+            </a> -->
+            <a class="header-logo link" href="./index.html" aria-label="Логотип Barbershop">
+                <svg class="header-logo-svg" width="68" height="56">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
             </a>
+
             <nav class="header-nav">
                 <ul class="header-list list">
                     <li class="header-list-item">
@@ -49,7 +56,8 @@
             </nav>
             <div class="header-group">
                 <a class="header-contact link" href="tel:+380441111111">+38 044 111 11 11</a>
-                <button class="header-btn btn btn-mode-dark animate__animated animate__shakeY" type="button" data-modal-open>ОНЛАЙН-ЗАПИС</button>
+                <button class="header-btn btn btn-mode-dark animate__animated animate__shakeY" type="button"
+                    data-modal-open>ОНЛАЙН-ЗАПИС</button>
             </div>
         </div>
     </header>
@@ -487,9 +495,9 @@
                 </div>
                 <div class="form-field-container">
                     <span class="form-field-label">Телефон</span>
-                    <label class="form-field">
-                        <input type="tel" name="user-phone" placeholder=" " minlength="10" pattern="[0-9]{10}" required>
-                        <svg class="modal-field-icon" width="26px" height="26px">
+                    <label class="form-field form-field1">
+                        <input class="modal-input" type="tel" name="user-phone" placeholder=" " minlength="10" pattern="[0-9]{10}" required>
+                        <svg class="modal-field-icon" width="20px" height="20px">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </label>
@@ -512,7 +520,7 @@
                     </label>
 
                     <span class="form-checkbox-lable">Погоджуюсь з разсиланням та приймаю
-                        <a class="submit-check-agree"
+                        <a class="submit-check-agree link"
                             href="https://www.google.com/search?q=%D1%8F%D0%BA+%D1%81%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B8+%D1%83%D0%BC%D0%BE%D0%B2%D0%B8+%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%83&oq=%D1%8F%D0%BA+%D1%81%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B8+%D1%83%D0%BC%D0%BE%D0%B2%D0%B8+%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%83&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigAdIBCDYzODdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
                             target="_blank" rel="noopener no-referrer">
                             Умови договору
@@ -524,8 +532,7 @@
         </div>
     </div>
 
-    <script src="./js/modal.js"></script>
-    <script src=""></script>
+
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -533,6 +540,9 @@
         integrity="sha512-DVfS/GbZzLMmxBL/CW92N84eHP2Fq9d+r9RKbvctcvzISVfu+WvD+MCvbK9j8I6nVLrntGo3UUVrNFUDX0ukBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/input-mask.js"></script>
+
+        <script src="./js/modal.js"></script>
+        <script src="./js/scroll-header.js"></script>
 
 </body>
 
