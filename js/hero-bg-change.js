@@ -4,9 +4,9 @@ const sliderBtnNext = document.querySelector('.slider-btn-next');
 const sliderPagination = document.querySelectorAll('.slider-pagination-item');
 
 const bgImage = [
-  'url(../images/hero/hero-1.png), linear-gradient(to right, #fff 155px, rgba(25, 28, 38, 0.2) 155px)',
-  'url(../images/hero/hero-2.png), linear-gradient(to right, #fff 155px, rgba(25, 28, 38, 0.2) 155px)',
-  'url(../images/hero/hero-3.png), linear-gradient(to right, #fff 155px, rgba(25, 28, 38, 0.2) 155px)',
+  'url(./images/hero/hero-1.png), linear-gradient(to right, #fff 155px, rgba(25, 28, 38, 0.2) 155px)',
+  'url(./images/hero/hero-2.png), linear-gradient(to right, #fff 155px, rgba(25, 28, 38, 0.2) 155px)',
+  'url(./images/hero/hero-3.png), linear-gradient(to right, #fff 155px, rgba(25, 28, 38, 0.2) 155px)',
 ];
 
 let imgIndex = 0;
