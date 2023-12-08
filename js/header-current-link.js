@@ -1,4 +1,4 @@
-const heroLinks = document.querySelectorAll('.header-list li a');
+const heroLinks = document.querySelectorAll('.nav__list li a');
 heroLinks.forEach(item => {
   item.addEventListener('click', e => {
     heroLinks.forEach(el => {
