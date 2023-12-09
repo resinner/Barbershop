@@ -1,0 +1,48 @@
+html::-webkit-scrollbar {
+  display: block;
+  width: 20px;
+  height: 8px;
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--main-light-theme);
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-color);
+}
+
+html::-webkit-scrollbar-button:vertical:start:decrement {
+  background: linear-gradient(120deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, var(--accent-color) 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+  border-radius: 9em;
+}
+
+html::-webkit-scrollbar-button:vertical:end:increment {
+  background: linear-gradient(300deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(60deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(180deg, var(--accent-color) 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+  border-radius: 9em;
+}
+
+html::-webkit-scrollbar-button:horizontal:start:decrement {
+  background: linear-gradient(30deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(150deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(270deg, var(--accent-color) 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+  border-radius: 9em;
+}
+
+html::-webkit-scrollbar-button:horizontal:end:increment {
+  background: linear-gradient(210deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(330deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(90deg, var(--accent-color) 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+  border-radius: 9em;
+}

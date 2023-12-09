@@ -1,0 +1,32 @@
+// .portfolio-uppertitle {
+//   margin-bottom: 44px;
+// }
+
+.portfolio__list {
+  --items: 1;
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 4;
+  }
+}
+
+.portfolio__item {
+  overflow: hidden;
+  position: relative;
+
+  // @media screen and (min-width: 768px) {
+  //   width: 330px;
+  // }
+
+  //   @media screen and (min-width: 1200px) {
+  //   width: 270px;
+  // }
+}
+
+.portfolio__item:hover .overlay {
+  transform: translateY(0%);
+}

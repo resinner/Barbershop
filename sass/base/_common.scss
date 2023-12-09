@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-fonts), sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}

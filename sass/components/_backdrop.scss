@@ -1,0 +1,34 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+
+  background-color: rgba(55, 57, 63, 0.203);
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+  transition: opacity 300ms var(--anim-fast), visibility 300ms var(--anim-fast),
+    transform 300ms var(--anim-fast), -webkit-transform 300ms var(--anim-fast);
+
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+  }
+
+  z-index: 7;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    transform: scale(1.7) rotateX(180deg);
+
+    transition: opacity 500ms var(--anim-fast), visibility 500ms var(--anim-fast),
+      transform 500ms var(--anim-fast), -webkit-transform 500ms var(--anim-fast);
+  }
+}

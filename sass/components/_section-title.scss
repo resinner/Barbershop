@@ -1,0 +1,17 @@
+.section-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  &--mode-light {
+    margin-bottom: 20px;
+    color: #303030;
+  }
+
+  &--mode-dark {
+    color: #ffffff;
+    margin-bottom: 44px;
+  }
+}

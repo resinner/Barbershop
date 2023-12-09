@@ -1,0 +1,30 @@
+@import "./utils/vars";
+@import "./utils/visually-hidden";
+
+@import "./base/common";
+@import "./base/reset";
+@import "./base/card-set";
+
+@import "./components/buttons";
+@import "./components/container";
+@import "./components/section";
+@import "./components/socials";
+@import "./components/uppertitle";
+@import "./components/main-title";
+@import "./components/section-title";
+@import "./components/section-subtitle";
+@import "./components/slider";
+@import "./components/overlay";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/scrollbar";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/price";
+@import "./layout/benefits";
+@import "./layout/team";
+@import "./layout/portfolio";
+@import "./layout/contacts";
+@import "./layout/footer";
