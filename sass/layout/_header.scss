@@ -1,8 +1,10 @@
 .header {
   position: fixed;
-  z-index: 2;
   top: 0;
   width: 100%;
+  z-index: 10;
+
+  background-color: black;
 }
 
 .header__container {
@@ -11,11 +13,36 @@
 }
 
 .header__logo {
-  margin-right: 71px;
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 64px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 71px;
+  }
 }
 
 .logo__svg {
   fill: var(--main-light-theme);
+  width: 68px;
+
+  fill: #ffffff;
+}
+
+.header__menu {
+  fill: #ffffff;
+}
+
+.nav {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .nav__list {
@@ -92,22 +119,32 @@
 }
 
 .header__group {
-  margin-left: auto;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    display: block;
+  }
 }
 
 .header__contact {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  display: none;
 
-  color: var(--main-dark-theme);
-  transition: color var(--anim-fast);
+  @media screen and (min-width: 1200px) {
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+    color: var(--main-dark-theme);
+    transition: color var(--anim-fast);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
 

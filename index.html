@@ -25,18 +25,61 @@
 </head>
 
 <body data-body>
-
+<!-- 
     <header class="header">
         <div class="container header__container">
-            <!-- <a class="header-logo link" href="./index.html">
+             <a class="header-logo link" href="./index.html">
                 <img class="header-logo-svg" src="./images/header/logo.svg" alt="Логотип Barbershop" width="68"
                     height="56" />
-            </a> -->
+            </a> 
             <a class="header__logo link" href="./index.html" aria-label="Логотип Barbershop">
-                <svg class="logo__svg" width="68" height="56">
+                <svg class="logo__svg" width=68" height="56">
                     <use href="./images/icons.svg#icon-logo"></use>
                 </svg>
             </a>
+
+            <button class="mobile-menu-btn" type="button" data-menu-btn>
+                <svg class="mobile-menu-icon" width="68" height="56">
+                    <use class="mobile-menu-burger" href="./images/icons.svg#icon-menu"></use>
+                    <use class="mobile-menu-close" href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+
+            
+            <div class="mobile-menu" data-menu>
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-nav-list list">
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-item-link link" href="#about">Про нас</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-item-link link" href="#price">Послуги та ціни</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-item-link link" href="#team">Майстри</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-item-link link" href="#contacts">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-contacts">
+                    <a class="mobile-menu-contacts-item link" href="tel:+380441111111">+38 044 111 11 11</a>
+                    <button class="btn btn--mode-light" type="button" data-modal-open>ОНЛАЙН-ЗАПИС</button>
+                </div>
+                <ul class="mobile-menu-socials list">
+                    <li class="mobile-menu-socials-item">
+                        <a class="mobile-menu-socials-link link" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener noreferrer">Instagram</a>
+                    </li>
+                    <li class="mobile-menu-socials-item">
+                        <a class="mobile-menu-socials-link link" href="https://www.youtube.com/" target="_blank"
+                            rel="noopener noreferrer">Youtube</a>
+                    </li>
+            
+                </ul>
+            </div>
+
 
             <nav class="nav">
                 <ul class="nav__list list">
@@ -60,7 +103,7 @@
                     data-modal-open>ОНЛАЙН-ЗАПИС</button>
             </div>
         </div>
-    </header>
+    </header> -->
 
     <!-- Унікальний контент -->
     <main>
@@ -141,7 +184,7 @@
             </div>
         </section> -->
         <!-- Секція Послуги та ціни -->
-        <!-- <section class="price section" id="price">
+        <section class="price section" id="price">
             <div class="container">
                 <p class="price-uppertitle uppertitle uppertitle--mode-dark">
                     Проведи час у компанії кращих майстрів
@@ -191,12 +234,11 @@
                 </ul>
                 <button class="btn btn--mode-dark price-btn" type="button" data-modal-open3>ОНЛАЙН-ЗАПИС</button>
             </div>
-        </section> -->
+        </section>
         <!-- Секція Переваги -->
-        <!-- <section class="benefits section">
+        <section class="benefits section">
             <div class="benefits-container container">
                 <ul class="benefits-list list">
-                   <ul class="list benefits-list card-set"> 
                     <li class="benefits-item">
                         <p class="benefits-amount">600<sup class="benefits-decor">&#43;</sup></p>
                         <p class="benefits-descr">Задоволених клієнтів в день</p>
@@ -222,7 +264,7 @@
                         побачити та відчути, ніж 10 разів прочитати.</p>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- Майстри -->
         <section class="team section" id="team">
             <div class="container">
@@ -481,6 +523,7 @@
     </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
+
         <div class="modal">
             <button class="modal-close-btn" type="button" data-modal-close>
                 <svg width="20" height="20">
@@ -539,9 +582,7 @@
         </div>
     </div>
 
-
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/inputmask/inputmask.min.js"
         integrity="sha512-DVfS/GbZzLMmxBL/CW92N84eHP2Fq9d+r9RKbvctcvzISVfu+WvD+MCvbK9j8I6nVLrntGo3UUVrNFUDX0ukBw=="
@@ -550,8 +591,9 @@
 
     <script src="./js/hero-bg-change.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/scroll-header.js"></script>
-    <script src="./js/header-current-link.js"></script>
+    <!-- <script src="./js/scroll-header.js"></script> -->
+    <!-- <script src="./js/header-current-link.js"></script> -->
+    <!-- <script src="./js/mobile-menu.js"></script> --> -->
 
 </body>
 

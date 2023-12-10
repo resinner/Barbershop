@@ -4,10 +4,18 @@
 
 .team-uppertitle {
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 15vw;
+  }
 }
 
 .team__title {
   margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 15vw;
+  }
 }
 
 .team__wrapper {
@@ -24,7 +32,7 @@
 
   @media screen and (min-width: 1200px) {
     --items: 3;
-      --indent: 30px;
+    --indent: 30px;
   }
 }
 
