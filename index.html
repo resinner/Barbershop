@@ -25,7 +25,7 @@
 </head>
 
 <body data-body>
-<!-- 
+    <!-- 
     <header class="header">
         <div class="container header__container">
              <a class="header-logo link" href="./index.html">
@@ -152,7 +152,7 @@
             </div>
         </section> -->
         <!-- Секція про нас -->
-        <!-- <section class="about section" id="about">
+        <section class="about section" id="about">
             <div class="container about-container">
                 <ul class="list about-list">
                     <li class="about__item">
@@ -182,7 +182,7 @@
                     <button class="btn btn--mode-light" type="button" data-modal-open2>ОНЛАЙН-ЗАПИС</button>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- Секція Послуги та ціни -->
         <section class="price section" id="price">
             <div class="container">
@@ -442,12 +442,12 @@
             </div>
         </section>
         <!-- Секція Контакти -->
-        <!-- <section class="contacts-section section" id="contacts">
-            <div class="contacts-container container">
-                <div class="contacts-subcontainer">
+        <div class="contact-form-wrapper">
+            <section class="registration-form-section section">
+                <div class="container">
                     <strong class="contact-section-title section-title section-title--mode-dark">Онлайн-запис</strong>
                     <form name="contact-form" autocomplete="on">
-                        <div class="contact-form__wrapper">
+                        <div class="form__wrapper">
                             <label class="contact-form__group">
                                 <input class="contact-form__field" name="user-name" autocomplete="name"
                                     placeholder="John Wick*" required />
@@ -464,49 +464,56 @@
                                 name="user-massage"></textarea>
                             <span class="contact-form__textarea-label">Повідомлення</span>
                         </label>
-                        <button class="btn btn--mode-dark submit" type="submit">відправити</button>
+                        <button class="contact-form-btn btn btn--mode-dark submit" type="submit">відправити</button>
                     </form>
                 </div>
-                <div class="contacts-subcontainer">
-                    <h2 class="section-title section-title--mode-dark">Контакти</h2>
-                    <address>
-                        <ul class="contacts-adress-list list">
-                            <li class="contacts-adress__item">
+            </section>
+            <section class="contacts-section section" id="contacts">
+                <div class="contacts-container container">
+                    <h2 class="contact-section-title section-title section-title--mode-dark">Контакти</h2>
+                    <div class="address-box">
+                        <address class="address">
+                            <ul class="contacts-adress-list list">
+                                <li class="contacts-adress__item">
+                                    <a class="contacts-address-link link" href="https://maps.app.goo.gl/nvbHCaVQwEr1NHbV6"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <svg class="contacts__icon" width="24" height="24">
+                                            <use href="./images/icons.svg#icon-location"></use>
+                                        </svg>
+                                        вул. Васильківська, 7А<br> Київ, 08132</a>
+                                </li>
+                                <li class="contacts-adress__item">
+                                    <a class="contacts-address-link link" href="tel:+380441111111">
+                                        <svg class="contacts__icon" width="24" height="24">
+                                            <use href="./images/icons.svg#icon-phone"></use>
+                                        </svg>
+                                        +38 044 111 11 11</a>
+                                </li>
+                                <li class="contacts-adress__item">
+                                    <a class="contacts-address-link link" href="mailto:barbershop@email.com">
+                                        <svg class="contacts__icon" width="24" height="24">
+                                            <use href="./images/icons.svg#icon-mail"></use>
+                                        </svg>
+                                        barbershop@email.com</a>
+                                </li>
+                            </ul>
+                        </address>
+                        <div>
+                            <h3 class="contacts-uppertitle">ЧАСИ РОБОТИ</h3>
+                            <p class="contacts-address-time">Щоденно з <time class="time" datetime="9:00"> 9:00 </time>
+                                до
+                                <time class="time" datetime="22:00">22:00</time>
+                            </p>
+                        </div>
+                    </div>
 
-                                <a class="contacts-address link" href="https://maps.app.goo.gl/nvbHCaVQwEr1NHbV6"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <svg class="contacts__icon" width="24" height="24">
-                                        <use href="./images/icons.svg#icon-location"></use>
-                                    </svg>
-                                    вул. Васильківська, 7А<br> Київ, 08132</a>
-                            </li>
-                            <li class="contacts-adress__item">
-                                <a class="contacts-address link" href="tel:+380441111111">
-                                    <svg class="contacts__icon" width="24" height="24">
-                                        <use href="./images/icons.svg#icon-phone"></use>
-                                    </svg>
-                                    +38 044 111 11 11</a>
-                            </li>
-                            <li class="contacts-adress__item">
-                                <a class="contacts-address link" href="mailto:barbershop@email.com">
-                                    <svg class="contacts__icon" width="24" height="24">
-                                        <use href="./images/icons.svg#icon-mail"></use>
-                                    </svg>
-                                    barbershop@email.com</a>
-                            </li>
-                        </ul>
-                    </address>
-
-                    <h3 class="contacts-uppertitle">ЧАСИ РОБОТИ</h3>
-                    <p class="contacts-address-time">Щоденно з <time class="time" datetime="9:00"> 9:00 </time> до <time
-                            class="time" datetime="22:00">22:00</time></p>
                 </div>
-            </div>
-        </section> -->
+            </section>
+        </div>
     </main>
 
     <!-- Секція футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer-container container">
             <p class="footer-copyright">&#169; Copyright 2020</p>
             <ul class="footer-list list">
@@ -520,9 +527,9 @@
                 </li>
             </ul>
         </div>
-    </footer> -->
+    </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
 
         <div class="modal">
             <button class="modal-close-btn" type="button" data-modal-close>
@@ -580,7 +587,7 @@
                 <button class="submit-button-modal btn" type="submit">Відправить</button>
             </form>
         </div>
-    </div>
+    </div> -->
 
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -591,9 +598,9 @@
 
     <script src="./js/hero-bg-change.js"></script>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/scroll-header.js"></script> -->
+    <script src="./js/scroll-header.js"></script> -->
     <!-- <script src="./js/header-current-link.js"></script> -->
-    <!-- <script src="./js/mobile-menu.js"></script> --> -->
+    <!-- <script src="./js/mobile-menu.js"></script> -->
 
 </body>
 
