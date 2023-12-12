@@ -1,10 +1,15 @@
 .slider-pagination {
-  position: absolute;
-  top: 50%;
-  right: 55px;
-  transform: translateY(-50%);
+  display: none;
 
-  color: #fff;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 55px;
+    transform: translateY(-50%);
+
+    color: #fff;
+  }
 }
 
 .slider-pagination__item {
@@ -25,6 +30,9 @@
 }
 
 .slider-controls {
+  display: none;
+
+  @media screen and (min-width: 768px) {
   position: absolute;
   bottom: 40px;
   right: 55px;
@@ -32,6 +40,7 @@
   display: flex;
   align-items: center;
   gap: 26px;
+  }
 }
 
 .slider-btn {
