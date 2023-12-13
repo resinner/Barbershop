@@ -9,6 +9,11 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer-copyright {
@@ -18,6 +23,10 @@
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9da4bd;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-bottom: 20px;
+  }
 }
 
 .footer-list {

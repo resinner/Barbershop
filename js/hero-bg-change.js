@@ -1,35 +1,59 @@
-const bodyBg = document.querySelector('.hero');
+const bodyBg = document.querySelector('.hero-right-side');
 const sliderBtnPrev = document.querySelector('.slider-btn__prev');
 const sliderBtnNext = document.querySelector('.slider-btn__next');
 const sliderPagination = document.querySelectorAll('.slider-pagination__item');
 
-const bgImage = [
-  'url(./images/hero/hero-1.png), linear-gradient(to right, #fff 155px, rgba(25, 28, 38, 0.2) 155px)',
-  'url(./images/hero/hero-2.png), linear-gradient(to right, #fff 155px, rgba(25, 28, 38, 0.2) 155px)',
-  'url(./images/hero/hero-3.png), linear-gradient(to right, #fff 155px, rgba(25, 28, 38, 0.2) 155px)',
+const bgDeskImage = [
+  'url(./images/hero/hero-desk-bg1-x1.jpg), linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2))',
+  'url(./images/hero/hero-desk-bg2-x1.jpg), linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2))',
+  'url(./images/hero/hero-desk-bg3-x1.jpg), linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2))',
+];
+
+const bgTabletImage = [
+  'url(./images/hero/hero-tablet-bg1-x1.jpg), linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2))',
+  'url(./images/hero/hero-tablet-bg2-x1.jpg), linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2))',
+  'url(./images/hero/hero-tablet-bg3-x1.jpg), linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2))',
 ];
 
 let imgIndex = 0;
-const imgMax = bgImage.length;
-bodyBg.style.backgroundImage = bgImage[imgIndex];
+const imgMax = bgDeskImage.length;
+// bodyBg.style.backgroundImage = bgDeskImage[imgIndex];
+
+const pageWidth = document.documentElement.scrollWidth;
+// console.log(pageWidth);
 
 //========================================================================================================
 
 sliderBtnPrev.addEventListener('click', e => {
   imgIndex = imgIndex - 1;
 
-  if (imgIndex < 0) {
-    imgIndex = 2;
-    bodyBg.style.backgroundImage = bgImage[imgIndex];
-    sliderPagination[imgIndex - 2].classList.remove('slider-pagination__current');
+  if (pageWidth < 769) {
+    if (imgIndex < 0) {
+      imgIndex = 2;
+      bodyBg.style.backgroundImage = bgTabletImage[imgIndex];
+      sliderPagination[imgIndex - 2].classList.remove('slider-pagination__current');
+      sliderPagination[imgIndex].classList.add('slider-pagination__current');
+      return;
+    }
+
+    bodyBg.style.backgroundImage = bgTabletImage[imgIndex];
+
+    sliderPagination[imgIndex + 1].classList.remove('slider-pagination__current');
     sliderPagination[imgIndex].classList.add('slider-pagination__current');
-    return;
+  } else {
+    if (imgIndex < 0) {
+      imgIndex = 2;
+      bodyBg.style.backgroundImage = bgDeskImage[imgIndex];
+      sliderPagination[imgIndex - 2].classList.remove('slider-pagination__current');
+      sliderPagination[imgIndex].classList.add('slider-pagination__current');
+      return;
+    }
+
+    bodyBg.style.backgroundImage = bgDeskImage[imgIndex];
+
+    sliderPagination[imgIndex + 1].classList.remove('slider-pagination__current');
+    sliderPagination[imgIndex].classList.add('slider-pagination__current');
   }
-
-  bodyBg.style.backgroundImage = bgImage[imgIndex];
-
-  sliderPagination[imgIndex + 1].classList.remove('slider-pagination__current');
-  sliderPagination[imgIndex].classList.add('slider-pagination__current');
 });
 
 //========================================================================================================
@@ -37,16 +61,31 @@ sliderBtnPrev.addEventListener('click', e => {
 sliderBtnNext.addEventListener('click', e => {
   imgIndex = imgIndex + 1;
 
-  if (imgIndex >= imgMax) {
-    imgIndex = 0;
-    bodyBg.style.backgroundImage = bgImage[imgIndex];
-    sliderPagination[imgIndex + 2].classList.remove('slider-pagination__current');
+  if (pageWidth < 769) {
+    if (imgIndex >= imgMax) {
+      imgIndex = 0;
+      bodyBg.style.backgroundImage = bgTabletImage[imgIndex];
+      sliderPagination[imgIndex + 2].classList.remove('slider-pagination__current');
+      sliderPagination[imgIndex].classList.add('slider-pagination__current');
+      return;
+    }
+
+    bodyBg.style.backgroundImage = bgTabletImage[imgIndex];
+
+    sliderPagination[imgIndex - 1].classList.remove('slider-pagination__current');
     sliderPagination[imgIndex].classList.add('slider-pagination__current');
-    return;
+  } else {
+    if (imgIndex >= imgMax) {
+      imgIndex = 0;
+      bodyBg.style.backgroundImage = bgDeskImage[imgIndex];
+      sliderPagination[imgIndex + 2].classList.remove('slider-pagination__current');
+      sliderPagination[imgIndex].classList.add('slider-pagination__current');
+      return;
+    }
+
+    bodyBg.style.backgroundImage = bgDeskImage[imgIndex];
+
+    sliderPagination[imgIndex - 1].classList.remove('slider-pagination__current');
+    sliderPagination[imgIndex].classList.add('slider-pagination__current');
   }
-
-  bodyBg.style.backgroundImage = bgImage[imgIndex];
-
-  sliderPagination[imgIndex - 1].classList.remove('slider-pagination__current');
-  sliderPagination[imgIndex].classList.add('slider-pagination__current');
 });

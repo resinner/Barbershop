@@ -1,7 +1,7 @@
 const header = document.querySelector('.header');
 const logo = document.querySelector('.logo__svg');
-const pageWidth = document.documentElement.scrollWidth;
-console.log(pageWidth);
+// const pageWidth = document.documentElement.scrollWidth;
+// console.log(pageWidth);
 
 window.onscroll = function () {
   if (window.scrollY > 100) {

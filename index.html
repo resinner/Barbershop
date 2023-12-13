@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -61,7 +61,7 @@
                 </nav>
                 <div class="mobile-menu-contacts">
                     <a class="mobile-menu-contacts-item link" href="tel:+380441111111">+38 044 111 11 11</a>
-                    <button class="btn btn--mode-light" type="button" data-modal-open>ОНЛАЙН-ЗАПИС</button>
+                    <button class="btn btn--mode-light" type="button" data-modal-open4>ОНЛАЙН-ЗАПИС</button>
                 </div>
                 <ul class="mobile-menu-socials list">
                     <li class="mobile-menu-socials-item">
@@ -106,7 +106,6 @@
         <!-- Секція Герой -->
         <section class="hero">
             <div class="hero__container">
-
                 <div class="hero-left-side">
                     <ul class="hero__list list">
                         <li class="hero__item">
@@ -120,7 +119,6 @@
 
                     </ul>
                 </div>
-
                 <div class="hero-right-side">
                     <p class="uppertitle-hero uppertitle uppertitle--mode-dark" lang="en">A hair salon for men in Kyiv
                     </p>
@@ -128,9 +126,6 @@
                     <p class="hero__desc">Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно та зі
                         смаком.</p>
                 </div>
-
-
-
                 <ul class="slider-pagination list">
                     <li class="slider-pagination__item slider-pagination__current"></li>
                     <li class="slider-pagination__item"></li>
@@ -152,12 +147,42 @@
             <div class="container about-container">
                 <ul class="list about-list">
                     <li class="about__item">
-                        <img class="about-pic" src="./images/about/img-1.jpg" alt="Бриття бороди" width="270"
-                            height="445" />
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/about/img-1_desk.webp 1x, ./images/about/img-1_desk@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/about/img-1_desk.jpg 1x, ./images/about/img-1_desk@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 1199px)"
+                                srcset="./images/about/img-1_tablet.webp 1x, ./images/about/img-1_tablet@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(max-width: 1199px)"
+                                srcset="./images/about/img-1_tablet.jpg 1x, ./images/about/img-1_tablet@2x.jpg 2x"
+                                type="image/jpg" />
+                            <!-- <img class="team__avatar" src="./images/team/team-img1_sm.jpg" alt="John Smith" width="418" height="346"> -->
+                            <img class="about-pic" src="./images/about/img-1_tablet.jpg" alt="Бриття бороди" width="330"
+                                height="235" />
+                        </picture>
                     </li>
                     <li class="about__item">
-                        <img class="about-pic" src="./images/about/img-2.jpg" alt="Бриття небезпечною бритвою"
-                            width="270" height="445" />
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/about/img-2_desk.webp 1x, ./images/about/img-2_desk@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/about/img-2_desk.jpg 1x, ./images/about/img-2_desk@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 1199px)"
+                                srcset="./images/about/img-2_tablet.webp 1x, ./images/about/img-2_tablet@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(max-width: 1199px)"
+                                srcset="./images/about/img-2_tablet.jpg 1x, ./images/about/img-2_tablet@2x.jpg 2x"
+                                type="image/jpg" />
+                            <!-- <img class="team__avatar" src="./images/team/team-img1_sm.jpg" alt="John Smith" width="418" height="346"> -->
+                            <img class="about-pic" src="./images/about/img-2_tablet.jpg" alt="Бриття бороди" width="330"
+                                height="235" />
+                        </picture>
                     </li>
                 </ul>
 
@@ -270,8 +295,28 @@
                 <ul class="team__list card-set list">
 
                     <li class="team__item card-set__item">
-                        <img class="team__avatar" src="./images/team/img-1.jpg" alt="John Smith" width="370"
-                            height="346">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team/team-img1_lg.webp 1x, ./images/team/team-img1_lg@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team/team-img1_lg.jpg 1x, ./images/team/team-img1_lg@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team/team-img1_md.webp 1x, ./images/team/team-img1_md@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team/team-img1_md.jpg 1x, ./images/team/team-img1_md@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team/team-img1_sm.webp 1x, ./images/team/team-img1_sm@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team/team-img1_sm.jpg 1x, ./images/team/team-img1_sm@2x.jpg 2x"
+                                type="image/jpg" />
+                            <img class="team__avatar" src="./images/team/team-img1_sm.jpg" alt="John Smith" width="418"
+                                height="346">
+                        </picture>
                         <div class="team__wrapper">
                             <h3 class="team__subtitle" lang="en">John Smith</h3>
                             <p class="team__position" lang="en">Extreme Barber</p>
@@ -310,8 +355,28 @@
                         </div>
                     </li>
                     <li class="team__item card-set__item">
-                        <img class="team__avatar" src="./images/team/img-2.jpg" alt="Michele Doe" width="370"
-                            height="346">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team/team-img2_lg.webp 1x, ./images/team/team-img2_lg@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team/team-img2_lg.jpg 1x, ./images/team/team-img2_lg@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team/team-img2_md.webp 1x, ./images/team/team-img2_md@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team/team-img2_md.jpg 1x, ./images/team/team-img2_md@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team/team-img2_sm.webp 1x, ./images/team/team-img2_sm@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team/team-img2_sm.jpg 1x, ./images/team/team-img2_sm@2x.jpg 2x"
+                                type="image/jpg" />
+                            <img class="team__avatar" src="./images/team/team-img2_sm.jpg" alt="John Smith" width="418"
+                                height="346">
+                        </picture>
                         <div class="team__wrapper">
                             <h3 class="team__subtitle" lang="en">Michele Doe</h3>
                             <p class="team__position" lang="en">Extreme Barber</p>
@@ -350,8 +415,28 @@
                         </div>
                     </li>
                     <li class="team__item card-set__item">
-                        <img class="team__avatar" src="./images/team/img-3.jpg" alt="Alan Black" width="370"
-                            height="346">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team/team-img3_lg.webp 1x, ./images/team/team-img3_lg@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team/team-img3_lg.jpg 1x, ./images/team/team-img3_lg@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team/team-img3_md.webp 1x, ./images/team/team-img3_md@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team/team-img3_md.jpg 1x, ./images/team/team-img3_md@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team/team-img3_sm.webp 1x, ./images/team/team-img3_sm@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team/team-img3_sm.jpg 1x, ./images/team/team-img3_sm@2x.jpg 2x"
+                                type="image/jpg" />
+                            <img class="team__avatar" src="./images/team/team-img3_sm.jpg" alt="John Smith" width="418"
+                                height="346">
+                        </picture>
                         <div class="team__wrapper">
                             <h3 class="team__subtitle" lang="en">Alan Black</h3>
                             <p class="team__position" lang="en">Extreme Barber</p>
@@ -400,8 +485,28 @@
                 <h2 hidden>Приклади робіт</h2>
                 <ul class="portfolio__list list card-set">
                     <li class="portfolio__item card-set__item">
-                        <img class="portfolio__pic" src="./images/portfolio/portfolio-1.jpg" alt="Приклад робіт 1"
-                            width="270" height="360">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/portfolio/portfolio-1_desk.webp 1x, ./images/portfolio/portfolio-1_desk@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/portfolio/portfolio-1_desk.jpg 1x, ./images/portfolio/portfolio-1_desk@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/portfolio/portfolio-1_tablet.webp 1x, ./images/portfolio/portfolio-1_tablet@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/portfolio/portfolio-1_tablet.jpg 1x, ./images/portfolio/portfolio-1_tablet@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/portfolio/portfolio-1_mobile.webp 1x, ./images/portfolio/portfolio-1_mobile@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/portfolio/portfolio-1_mobile.jpg 1x, ./images/portfolio/portfolio-1_mobile@2x.jpg 2x"
+                                type="image/jpg" />
+                            <img class="portfolio__pic" src="./images/portfolio/portfolio-1_mobile.jpg"
+                                alt="Приклад робіт 1" width="418" height="360">
+                        </picture>
                         <div class="overlay">
                             <p class="overlay__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
                                 nesciunt quis ratione tempora nihil voluptas laborum asperiores ab sed nobis atque culpa
@@ -409,8 +514,28 @@
                         </div>
                     </li>
                     <li class="portfolio__item card-set__item">
-                        <img class="portfolio__pic" src="./images/portfolio/portfolio-2.jpg" alt="Приклад робіт 2"
-                            width="270" height="360">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/portfolio/portfolio-2_desk.webp 1x, ./images/portfolio/portfolio-2_desk@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/portfolio/portfolio-2_desk.jpg 1x, ./images/portfolio/portfolio-2_desk@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/portfolio/portfolio-2_tablet.webp 1x, ./images/portfolio/portfolio-2_tablet@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/portfolio/portfolio-2_tablet.jpg 1x, ./images/portfolio/portfolio-2_tablet@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/portfolio/portfolio-2_mobile.webp 1x, ./images/portfolio/portfolio-2_mobile@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/portfolio/portfolio-2_mobile.jpg 1x, ./images/portfolio/portfolio-2_mobile@2x.jpg 2x"
+                                type="image/jpg" />
+                            <img class="portfolio__pic" src="./images/portfolio/portfolio-2_mobile.jpg"
+                                alt="Приклад робіт 2" width="418" height="360">
+                        </picture>
                         <div class="overlay">
                             <p class="overlay__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
                                 nesciunt quis ratione tempora nihil voluptas laborum asperiores ab sed nobis atque culpa
@@ -418,7 +543,28 @@
                         </div>
                     </li>
                     <li class="portfolio__item card-set__item">
-                        <img src="./images/portfolio/portfolio-3.jpg" alt="Приклад робіт 3" width="270" height="360">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/portfolio/portfolio-3_desk.webp 1x, ./images/portfolio/portfolio-3_desk@2x.webp 2x"
+                                type="image/jpg" />
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/portfolio/portfolio-3_desk.jpg 1x, ./images/portfolio/portfolio-3_desk@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/portfolio/portfolio-3_tablet.webp 1x, ./images/portfolio/portfolio-3_tablet@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/portfolio/portfolio-3_tablet.jpg 1x, ./images/portfolio/portfolio-3_tablet@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/portfolio/portfolio-3_mobile.webp 1x, ./images/portfolio/portfolio-3_mobile@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/portfolio/portfolio-3_mobile.jpg 1x, ./images/portfolio/portfolio-3_mobile@2x.jpg 2x"
+                                type="image/jpg" />
+                            <img class="portfolio__pic" src="./images/portfolio/portfolio-3_mobile.jpg"
+                                alt="Приклад робіт 3" width="418" height="360">
+                        </picture>
                         <div class="overlay">
                             <p class="overlay__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
                                 nesciunt quis ratione tempora nihil voluptas laborum asperiores ab sed nobis atque culpa
@@ -426,8 +572,28 @@
                         </div>
                     </li>
                     <li class="portfolio__item card-set__item">
-                        <img class="portfolio__pic" src="./images/portfolio/portfolio-4.jpg" alt="Приклад робіт 4"
-                            width="270" height="360">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/portfolio/portfolio-4_desk.webp 1x, ./images/portfolio/portfolio-4_desk@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/portfolio/portfolio-4_desk.jpg 1x, ./images/portfolio/portfolio-4_desk@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/portfolio/portfolio-4_tablet.webp 1x, ./images/portfolio/portfolio-4_tablet@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/portfolio/portfolio-4_tablet.jpg 1x, ./images/portfolio/portfolio-4_tablet@2x.jpg 2x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/portfolio/portfolio-4_mobile.webp 1x, ./images/portfolio/portfolio-4_mobile@2x.webp 2x"
+                                type="image/webp" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/portfolio/portfolio-4_mobile.jpg 1x, ./images/portfolio/portfolio-4_mobile@2x.jpg 2x"
+                                type="image/jpg" />
+                            <img class="portfolio__pic" src="./images/portfolio/portfolio-4_mobile.jpg"
+                                alt="Приклад робіт 4" width="418" height="360">
+                        </picture>
                         <div class="overlay">
                             <p class="overlay__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
                                 nesciunt quis ratione tempora nihil voluptas laborum asperiores ab sed nobis atque culpa

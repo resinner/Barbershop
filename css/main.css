@@ -51,7 +51,7 @@ p {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -117,17 +117,17 @@ button {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 448px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1250px;
   }
 }
 
@@ -778,9 +778,9 @@ html::-webkit-scrollbar {
   position: fixed;
   top: 0;
   right: 0;
-  width: 70vw;
+  width: 80vw;
   height: 100vh;
-  padding: 120px 50px;
+  padding: 80px 30px 30px 50px;
   background-color: var(--main-dark-theme);
   z-index: 100;
   display: -webkit-box;
@@ -899,6 +899,7 @@ html::-webkit-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 0;
 }
 
 .header__logo {
@@ -1086,30 +1087,10 @@ html::-webkit-scrollbar {
   position: relative;
   max-width: 1280px;
   margin: 0 auto;
-  background-color: #191c26;
-  background-image: url(../images/hero/sm-img-3.jpg), linear-gradient(to right, #fff 155px, rgba(25, 28, 38, 0.2) 155px);
-  background-position: top right, center;
-  background-repeat: no-repeat;
-  background-size: 480px 580px, cover;
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: url(), linear-gradient(to right, #fff 155px, rgba(25, 28, 38, 0.2) 155px);
-    background-position: top right, center;
-    background-repeat: no-repeat;
-    background-size: 576px 680px, cover;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    background-image: url(), linear-gradient(to right, #fff 155px, rgba(25, 28, 38, 0.2) 155px);
-    background-position: top right, center;
-    background-repeat: no-repeat;
-    background-size: 1125px 680px, cover;
-  }
 }
 
 .hero__container {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1126,16 +1107,16 @@ html::-webkit-scrollbar {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    max-width: 115px;
-    -ms-flex-preferred-size: 115px;
-        flex-basis: 115px;
+    width: 85px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-left-side {
-    max-width: 100px;
-    -ms-flex-preferred-size: 100px;
-        flex-basis: 100px;
+    padding-left: 40px;
+    padding-right: 54px;
   }
 }
 
@@ -1148,8 +1129,8 @@ html::-webkit-scrollbar {
           align-items: center;
   gap: 40px;
   margin-bottom: 40px;
-  -webkit-transform: translateX(28px) rotate(-90deg);
-          transform: translateX(28px) rotate(-90deg);
+  -webkit-transform: translateX(-10px) rotate(-90deg);
+          transform: translateX(-10px) rotate(-90deg);
   -webkit-transform-origin: top left;
           transform-origin: top left;
 }
@@ -1162,26 +1143,44 @@ html::-webkit-scrollbar {
 }
 
 .hero-right-side {
-  max-width: 450px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  width: 100%;
   padding: 208px 31px 183px 31px;
+  background-color: var(--main-light-theme);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/hero-mobile-bg3-x1.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero-mobile-bg3-x1.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-right-side {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/hero-mobile-bg3@2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero-mobile-bg3@2x.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-right-side {
-    margin-left: 70px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/hero-tablet-bg3-x1.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero-tablet-bg3-x1.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-right-side {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/hero-tablet-bg3@2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero-tablet-bg3@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-right-side {
-    max-width: 450px;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    padding-top: 272px;
-    padding-bottom: 206px;
-    margin-left: 100px;
+    padding: 272px 0 206px 96px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/hero-desk-bg3-x1.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero-desk-bg3-x1.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-right-side {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/hero/hero-desk-bg3@2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero-desk-bg3@2x.jpg);
   }
 }
 
@@ -1298,12 +1297,36 @@ html::-webkit-scrollbar {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #111319;
-  background-image: url(../images/price/price-bg.png);
-  background-position: right top;
+  background-color: rgb(25, 28, 38);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: url(../images/price/price-mobile-bg.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .price {
+    background-image: url(../images/price/price-mobile-bg@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .price {
+    background-image: url(../images/price/price-tablet-bg.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .price {
+    background-image: url(../images/price/price-tablet-bg@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .price {
+    background-image: url(../images/price/price-desk-bg.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .price {
+    background-image: url(../images/price/price-desk-bg@2x.png);
+  }
 }
 
 .price-uppertitle {
@@ -1335,7 +1358,7 @@ html::-webkit-scrollbar {
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .price-list {
     font-size: 18px;
     line-height: 1.67;
@@ -1689,6 +1712,9 @@ html::-webkit-scrollbar {
   }
 }
 
+.registration-form-section {
+  background-color: #191c26;
+}
 @media screen and (min-width: 1200px) {
   .registration-form-section {
     width: 600px;
@@ -2049,13 +2075,35 @@ html::-webkit-scrollbar {
 }
 
 .contacts-section {
-  background-color: #191c26;
-  background-image: url(../images/contacts/contacts-bg.png);
+  background-color: rgb(25, 28, 38);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-image: url(../images/contacts/contact-mobile-bg.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contacts-section {
+    background-image: url(../images/contacts/contact-mobile-bg@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-section {
+    background-image: url(../images/contacts/contact-tablet-bg.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .contacts-section {
+    background-image: url(../images/contacts/contact-tablet-bg@2x.png);
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts-section {
+    background-image: url(../images/contacts/contact-desk-bg.png);
     width: 600px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .contacts-section {
+    background-image: url(../images/contacts/contact-desk-bg@2x.png);
   }
 }
 
@@ -2189,6 +2237,17 @@ html::-webkit-scrollbar {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .footer-copyright {
   font-family: var(--main-fonts);
@@ -2197,6 +2256,11 @@ html::-webkit-scrollbar {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9da4bd;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-copyright {
+    padding-bottom: 20px;
+  }
 }
 
 .footer-list {

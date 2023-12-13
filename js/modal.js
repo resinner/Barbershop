@@ -3,6 +3,7 @@
     openModalBtn: document.querySelector('[data-modal-open1]'),
     openModalBtn2: document.querySelector('[data-modal-open2]'),
     openModalBtn3: document.querySelector('[data-modal-open3]'),
+    openModalBtn3: document.querySelector('[data-modal-open4]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
     body: document.querySelector('[data-body]'),

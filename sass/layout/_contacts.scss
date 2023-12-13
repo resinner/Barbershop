@@ -9,6 +9,7 @@
 }
 
 .registration-form-section {
+    background-color: #191c26;
   @media screen and (min-width: 1200px) {
     width: 600px;
   }
@@ -191,16 +192,31 @@
 }
 //==================================================================
 .contacts-section {
-  background-color: #191c26;
-  background-image: url(../images/contacts/contacts-bg.png);
-  // background-size: 480px 496px, cover;
+  background-color: rgba(25, 28, 38, 1);
+;
+  background-size: cover;
   background-repeat: no-repeat;
-  // background-position: left bottom;
-  // background-size: contain;
-  // object-fit: scale-down;
+
+  background-image: url(../images/contacts/contact-mobile-bg.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/contacts/contact-mobile-bg@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/contacts/contact-tablet-bg.png);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/contacts/contact-tablet-bg@2x.png);
+  }
+  }
 
   @media screen and (min-width: 1200px) {
-  // background-size: 625px 644px, cover;
+    background-image: url(../images/contacts/contact-desk-bg.png);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/contacts/contact-desk-bg@2x.png);
+  }
 
     width: 600px;
   }

@@ -9,6 +9,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
+  // display: none;
   @media screen and (min-width: 1200px) {
     background-color: var(--main-light-theme);
     border-radius: 9em;
@@ -23,6 +24,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 html::-webkit-scrollbar-button:vertical:start:decrement {
+  // display: none;
   @media screen and (min-width: 1200px) {
     background: linear-gradient(120deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
       linear-gradient(240deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
@@ -33,6 +35,7 @@ html::-webkit-scrollbar-button:vertical:start:decrement {
 }
 
 html::-webkit-scrollbar-button:vertical:end:increment {
+  // display: none;
   @media screen and (min-width: 1200px) {
     background: linear-gradient(300deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
       linear-gradient(60deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
@@ -43,6 +46,7 @@ html::-webkit-scrollbar-button:vertical:end:increment {
 }
 
 html::-webkit-scrollbar-button:horizontal:start:decrement {
+  // display: none;
   @media screen and (min-width: 1200px) {
     background: linear-gradient(30deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
       linear-gradient(150deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
@@ -53,6 +57,7 @@ html::-webkit-scrollbar-button:horizontal:start:decrement {
 }
 
 html::-webkit-scrollbar-button:horizontal:end:increment {
+  // display: none;
   @media screen and (min-width: 1200px) {
     background: linear-gradient(210deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
       linear-gradient(330deg, var(--accent-color) 40%, rgba(0, 0, 0, 0) 41%),
