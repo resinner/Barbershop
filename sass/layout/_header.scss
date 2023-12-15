@@ -3,14 +3,12 @@
   top: 0;
   width: 100%;
   z-index: 10;
-
-  // background-color: black;
 }
 
 .header__container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 0;
 }
 
 .header__logo {
@@ -20,10 +18,12 @@
 
   @media screen and (min-width: 768px) {
     margin-right: 64px;
+    margin-left: 20px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-right: 71px;
+    margin-right: 70px;
+    margin-left: 0;
   }
 }
 
@@ -164,7 +164,7 @@
 
 .header__btn {
   margin-bottom: 20px;
-margin-top: 40px;
+  margin-top: 40px;
 
   @media screen and (min-width: 1200px) {
     margin-left: 40px;

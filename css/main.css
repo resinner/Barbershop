@@ -117,17 +117,17 @@ button {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 450px;
+    min-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 738px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1250px;
+    max-width: 1280px;
   }
 }
 
@@ -916,10 +916,12 @@ html::-webkit-scrollbar-button:horizontal:end:increment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 0;
 }
 
 .header__logo {
@@ -930,11 +932,13 @@ html::-webkit-scrollbar-button:horizontal:end:increment {
 @media screen and (min-width: 768px) {
   .header__logo {
     margin-right: 64px;
+    margin-left: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__logo {
-    margin-right: 71px;
+    margin-right: 70px;
+    margin-left: 0;
   }
 }
 
