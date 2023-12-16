@@ -1767,8 +1767,13 @@ html::-webkit-scrollbar-button:horizontal:end:increment {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 30px;
+    gap: 60px;
     margin-bottom: 44px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__wrapper {
+    gap: 30px;
   }
 }
 
@@ -1948,6 +1953,16 @@ html::-webkit-scrollbar-button:horizontal:end:increment {
   transition: border-color var(--anim-fast);
   margin-bottom: 44px;
 }
+@media screen and (min-width: 768px) {
+  .contact-form__textarea {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-form__textarea {
+    width: 560px;
+  }
+}
 
 .contact-form__textarea:not(:-moz-placeholder-shown) {
   border-color: #fff;
@@ -2088,13 +2103,16 @@ html::-webkit-scrollbar-button:horizontal:end:increment {
   transition: transform 200ms, -webkit-transform 200ms;
 }
 
-@media screen and (max-width: 768px) {
+.contact-form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
   .contact-form-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
   }
 }
 
