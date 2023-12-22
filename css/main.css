@@ -1565,12 +1565,12 @@ button {
 }
 
 .benefits-supcontainer {
-  width: 418px;
+  width: 370px;
   margin-bottom: 44px;
 }
 @media screen and (min-width: 1200px) {
   .benefits-supcontainer {
-    width: 550px;
+    width: 500px;
     margin-bottom: 0;
   }
 }
