@@ -6,10 +6,14 @@
   padding-top: 56px;
   padding-bottom: 56px;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
     display: flex;
-    flex-direction: column;
-  }
+  align-items: flex-end;
+  justify-content: space-between;
+
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 
     @media screen and (min-width: 768px) {
   display: flex;
@@ -26,9 +30,9 @@
   letter-spacing: 0.2em;
   color: #9da4bd;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    padding-bottom: 20px;
-  }
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   padding-bottom: 20px;
+  // }
 }
 
 .footer-list {
