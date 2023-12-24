@@ -6,13 +6,15 @@
   padding-top: 56px;
   padding-bottom: 56px;
 
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-
   @media screen and (min-width: 480px) and (max-width: 767px) {
     display: flex;
     flex-direction: column;
+  }
+
+    @media screen and (min-width: 768px) {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   }
 }
 
@@ -42,10 +44,14 @@
 }
 
 .footer-list__item {
-  margin-left: 40px;
+  margin-left: 20px;
 
   display: flex;
   justify-content: center;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+  margin-left: 40px;
+  }
 }
 
 .footer-list__link {
