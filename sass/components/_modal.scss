@@ -11,14 +11,18 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   width: 320px;
+  height: auto;
   padding: 40px;
 
   display: flex;
   flex-direction: column;
 
+    @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 528px;
-    height: auto;
   }
 
   &__title {
