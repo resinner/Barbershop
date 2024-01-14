@@ -749,7 +749,7 @@ button {
 }
 
 .mobile-menu-nav {
-  margin-bottom: auto;
+  margin-bottom: 80px;
 }
 
 .mobile-menu-item:not(:last-child) {
@@ -2278,7 +2278,7 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .footer-list__item {
     margin-left: 40px;
   }
