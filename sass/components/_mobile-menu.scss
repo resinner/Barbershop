@@ -74,8 +74,11 @@
 }
 
 .mobile-menu-nav {
-  // margin-bottom: auto;
-    margin-bottom: 160px;
+  margin-bottom: 155px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: auto;
+  }
 }
 
 .mobile-menu-item:not(:last-child) {
