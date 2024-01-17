@@ -17,10 +17,8 @@ const bgTabletImage = [
 
 let imgIndex = 0;
 const imgMax = bgDeskImage.length;
-// bodyBg.style.backgroundImage = bgDeskImage[imgIndex];
 
 const pageWidth = document.documentElement.scrollWidth;
-// console.log(pageWidth);
 
 //========================================================================================================
 
